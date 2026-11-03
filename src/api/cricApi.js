@@ -5,6 +5,8 @@ const BASE = "https://cricbuzz-cricket.p.rapidapi.com";
 
 const RAPIDAPI_KEY = import.meta.env.VITE_RAPIDAPI_KEY || "";
 const RAPIDAPI_HOST = import.meta.env.VITE_RAPIDAPI_HOST || "";
+console.log("API KEY loaded:", !!RAPIDAPI_KEY);
+console.log("API HOST:", RAPIDAPI_HOST);
 
 const api = axios.create({
   baseURL: BASE,
